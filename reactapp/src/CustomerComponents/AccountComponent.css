@@ -1,0 +1,40 @@
+/* src/CustomerComponents/AccountComponent.css */
+.account-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.error {
+  color: red;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f8f9fa;
+}

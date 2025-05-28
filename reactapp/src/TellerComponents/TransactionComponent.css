@@ -1,0 +1,108 @@
+/* src/TellerComponents/TransactionComponent.css */
+.transaction-container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.transaction-form {
+  margin-bottom: 20px;
+}
+
+.transaction-form input,
+.transaction-form select {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.transaction-form button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.transaction-form button:hover {
+  background-color: #218838;
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: green;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f8f9fa;
+}
+
+td button {
+  padding: 8px 16px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+td button:hover {
+  background-color: #c82333;
+}
+
+.confirm-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.confirm-popup button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.confirm-popup button:first-child {
+  background-color: #dc3545;
+  color: white;
+}
+
+.confirm-popup button:first-child:hover {
+  background-color: #c82333;
+}
+
+.confirm-popup button:last-child {
+  background-color: #6c757d;
+  color: white;
+}
+
+.confirm-popup button:last-child:hover {
+  background-color: #5a6268;
+}

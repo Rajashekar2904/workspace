@@ -1,0 +1,66 @@
+// src/CustomerComponents/OpenRDForm.jsx
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
+import './OpenRDForm.css';
+
+const OpenRDForm = () => {
+  const [amount, setAmount] = useState('');
+  const [tenure, setTenure] = useState('');
+  const [accountId, setAccountId] = useState('');
+  const [error, setError] = useState('');
+  const [success, setSuccess] = useState('');
+  const navigate = useNavigate();
+  const token = localStorage.getItem('token');
+  const userId = localStorage.getItem('userId');
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await axios.post(
+        'http://localhost:8080/api/recurring-deposits',
+        { userId, accountId, amount: parseFloat(amount), tenure: parseInt(tenure) },
+        { headers: { Authorization: `Bearer ${token}` } }
+      );
+      setSuccess('Recurring Deposit created successfully!');
+      setTimeout(() => navigate('/customer/recurring-deposits'), 2000);
+    } catch (err) {
+      setError('Failed to create recurring deposit.');
+      console.error('Create recurring deposit error:', err);
+    }
+  };
+
+  return (
+    <div className="open-rd-form-container">
+      <h2>Open Recurring Deposit</h2>
+      {error && <p className="error">{error}</p>}
+      {success && <p className="success">{success}</p>}
+      <div className="open-rd-form">
+        <input
+          type="number"
+          placeholder="Account ID"
+          value={accountId}
+          onChange={(e) => setAccountId(e.target.value)}
+          required
+        />
+        <input
+          type="number"
+          placeholder="Monthly Amount"
+          value={amount}
+          onChange={(e) => setAmount(e.target.value)}
+          required
+        />
+        <input
+          type="number"
+          placeholder="Tenure (months)"
+          value={tenure}
+          onChange={(e) => setTenure(e.target.value)}
+          required
+        />
+        <button onClick={handleSubmit}>Create Recurring Deposit</button>
+      </div>
+    </div>
+  );
+};
+
+export default OpenRDForm;

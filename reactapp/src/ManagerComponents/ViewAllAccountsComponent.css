@@ -1,0 +1,44 @@
+/* src/ManagerComponents/ViewAllAccountsComponent.css */
+.view-all-accounts-container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.error {
+  color: red;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f8f9fa;
+}
+
+button {
+  margin: 0 5px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:first-child {
+  background-color: #28a745;
+  color: white;
+}
+
+button:last-child {
+  background-color: #dc3545;
+  color: white;
+}

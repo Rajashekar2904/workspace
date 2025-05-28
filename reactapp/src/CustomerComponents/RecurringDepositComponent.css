@@ -1,0 +1,40 @@
+/* src/CustomerComponents/RecurringDepositComponent.css */
+.recurring-deposit-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.recurring-deposit-container button {
+  margin: 10px 0;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.recurring-deposit-container button:hover {
+  background-color: #218838;
+}
+
+.error {
+  color: red;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f8f9fa;
+}

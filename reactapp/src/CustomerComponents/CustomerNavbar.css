@@ -1,0 +1,31 @@
+/* src/CustomerComponents/CustomerNavbar.css */
+.customer-navbar {
+  background-color: #007bff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.customer-navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.customer-navbar a:hover {
+  background-color: #0056b3;
+  border-radius: 5px;
+}
+
+.customer-navbar button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.customer-navbar button:hover {
+  background-color: #c82333;
+}

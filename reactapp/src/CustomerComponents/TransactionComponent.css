@@ -1,0 +1,59 @@
+/* src/CustomerComponents/TransactionComponent.css */
+.transaction-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: green;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f8f9fa;
+}
+
+.confirm-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.confirm-popup button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.confirm-popup button:first-child {
+  background-color: #dc3545;
+  color: white;
+}
+
+.confirm-popup button:last-child {
+  background-color: #6c757d;
+  color: white;
+}

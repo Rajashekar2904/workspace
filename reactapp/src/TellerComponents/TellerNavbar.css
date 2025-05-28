@@ -1,0 +1,32 @@
+/* src/TellerComponents/TellerNavbar.css */
+.teller-navbar {
+  background-color: #007bff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.teller-navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.teller-navbar a:hover {
+  background-color: #0056b3;
+  border-radius: 5px;
+}
+
+.teller-navbar button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.teller-navbar button:hover {
+  background-color: #c82333;
+}
