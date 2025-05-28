@@ -1,0 +1,17 @@
+.error-page {
+    text-align: center;
+    margin-top: 50px;
+
+}
+.error-page h1{
+    color:red;
+
+}
+.error-page a {
+    color: #007bff;
+    text-decoration: none;
+
+}
+.error-page a:hover{
+    text-decoration: underline;
+}
