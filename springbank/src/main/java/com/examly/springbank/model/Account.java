@@ -2,6 +2,7 @@ package com.examly.springbank.model;
 
 import jakarta.persistence.*;
 import java.math.BigDecimal;
+import java.time.LocalDate;
 
 @Entity
 @Table(name = "accounts")
@@ -29,8 +30,8 @@ public class Account {
         return username;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setUsername(Long userId) {
+        this.username = userId;
     }
 
     public String getAccountType() {
@@ -64,5 +65,15 @@ public class Account {
                 ", accountType='" + accountType + '\'' +
                 ", balance=" + balance +
                 '}';
+    }
+
+    public void setStatus(String string) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setStatus'");
+    }
+
+    public void setDateCreated(LocalDate now) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setDateCreated'");
     }
 }

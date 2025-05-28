@@ -107,4 +107,9 @@ public class FixedDeposit {
                 ", status='" + status + '\'' +
                 '}';
     }
+
+    public void setAccountId(Long accountId) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setAccountId'");
+    }
 }
